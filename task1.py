@@ -8,3 +8,17 @@
 # 3
 # -> 1
 
+import random
+
+n = int(input("Введите количество элементов в массиве: "))
+
+lst = [random.randint(1, n) for i in range(n)]
+print(*lst)
+
+x = int(input("Введите число X: "))
+count = 0
+for i in lst:
+    if x == i:
+        count += 1
+
+print(count)
